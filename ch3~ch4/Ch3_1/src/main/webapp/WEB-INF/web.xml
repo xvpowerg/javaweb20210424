@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+<!--servlet-name與servlet-class 順序不可交換  -->
+<servlet>
+	<servlet-name>Page2</servlet-name>
+	<servlet-class>tw.com.web.MyPage2</servlet-class>
+</servlet>
+<!-- 相同的 servlet-name不可有相同的url-pattern-->
+<servlet-mapping>
+	<servlet-name>Page2</servlet-name>
+	<url-pattern>/mypage2</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>Page2</servlet-name>
+	<url-pattern>/page2.php</url-pattern>
+</servlet-mapping>
+
+</web-app>
