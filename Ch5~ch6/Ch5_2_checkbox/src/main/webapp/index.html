@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .checkboxDiv{
+            margin-top: 5px;
+             border: 0.6px;  
+            border-color: darkgrey; 
+            border-style: solid;
+             border-radius: 10px;
+             width: 200px;
+             height: auto;
+             box-shadow: 2px 2px 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="checkboxDiv">
+        <p style="text-align: center;">興趣</p>
+        <!--hobby=3-->
+        <form action="page1" method=POST>
+           <input type="checkbox" name="hobby" value="1"/> 閱讀<br/>
+           <input type="checkbox" name="hobby" value="2"/> 運動<br/>
+           <input type="checkbox" name="hobby" value="3"/> 音樂<br/>
+        <!--hidden 看不到的-->                
+          <!--   <input type="hidden" name="hobby" value="-1"/>-->             
+            <button>確定</button>
+        </form>
+    </div>
+    
+    <div class="checkboxDiv">
+        <p style="text-align: center;">興趣</p>
+        <!--hobby=3-->
+        <form action="page2" method=POST>
+           <input type="checkbox" name="hobby" value="1"/> 閱讀<br/>
+           <input type="checkbox" name="hobby" value="2"/> 運動<br/>
+           <input type="checkbox" name="hobby" value="3" checked/> 音樂<br/>
+           
+           <input type="radio" name="status" value="1"/> 已婚
+           <input type="radio" name="status" value="2" checked/> 未婚
+           <input type="radio" name="status" value="3"/> 你猜
+        <!--hidden 看不到的-->                
+          <!--   <input type="hidden" name="hobby" value="-1"/>-->             
+            <button>確定</button>
+        </form>
+    </div>
+    
+<!--ul 無序-->
+    <ul>
+        <li>閱讀</li>
+        <li>運動</li>
+        <li>音樂</li>
+    </ul>
+<!--ol有序清單-->
+
+    <ol>
+        <li>閱讀</li>
+        <li>運動</li>
+        <li>音樂</li>
+    </ol>
+
+</body>
+</html>
