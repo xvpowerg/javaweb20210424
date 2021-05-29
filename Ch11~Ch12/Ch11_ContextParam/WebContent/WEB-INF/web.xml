@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+<context-param>
+	<param-name>dbaccount</param-name>
+	<param-value>qwer</param-value>
+</context-param>
+<context-param>
+	<param-name>dbpass</param-name>
+	 <param-value>123456</param-value>
+</context-param>
+<servlet>
+	<servlet-name>page1Servlet</servlet-name>
+	<servlet-class>tw.com.web.Page1Servlet</servlet-class>
+	<init-param>
+		<param-name>id</param-name>
+		<param-value>Page1</param-value>
+	</init-param>
+	<init-param>
+		<param-name>count</param-name>
+		<param-value>10</param-value>
+	</init-param>
+</servlet>
+
+</web-app>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script>
+	function testCount(){
+		fetch("page1",{method:"get"}).then(resp=>{			
+			return resp.text();			
+		}).then(text=>{
+			document.getElementById("msg").innerText=text;			
+		}).catch(error=>{
+			consol.log("error",error);
+			
+		});	
+	}
+	
+
+</script>
+</head>
+<body>
+	<button onclick="testCount();">Count</button>
+	
+	<div id="msg">Empty</div>
+</body>
+</html>
