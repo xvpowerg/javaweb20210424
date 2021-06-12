@@ -34,10 +34,9 @@
    + [Ch11_1_RquestAttrListener]
    + [Ch11_2_ServletContextLintener] 
    + [Ch11_3_SessionAttrListener] 
-   + [Ch11_4_HttpSessionBindingListener]
+  
 + Ch12
    + [Ch12_TestCdi]
    + [Ch12_Test_Filter]
 + Ch13
-   + [Ch13_TestCdi_Scope]
    + [Ch13_WebJdbc]
