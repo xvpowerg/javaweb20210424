@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Ch16_1_JPA">
+	<class>tw.com.entity.MyUser</class>
+		<properties>
+		<!-- drop-and-create 每次啟動容器 就移除所有資料表 在建立資料表 -->
+		  <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+	</properties>
+	
+	</persistence-unit>
+</persistence>
